@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: hsl(185, 75%, 39%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.illusion-img-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-33%, -40%);
+}
+.illusion-img-2{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(33%, 40%);
+}
+.card{
+    width: 22.5rem;
+    height: 22.5rem;
+    background: #fff;
+    position: absolute;
+    z-index: 9999999999999999999999999;
+    border-radius: 1rem;
+}
+.image{
+    width: 100%;
+    height: 35%;
+    background: url('../images/bg-pattern-card.svg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+}
+.avtar{
+    border-radius: 50%;
+    border: 4.5px solid #fff;
+    position: absolute;
+    transform: translateY(75%);
+}
+.details{
+    height: 42.5%;
+    width: 100%;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5px solid hsla(0, 0%, 59%, 0.425);
+}
+.name{
+    font-size: 1.5rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: .75rem;
+}
+span{
+    font-size: 1.75rem;
+    opacity: .5;
+    font-weight: 400;
+}
+.city{
+    font-size: 1.2rem;
+    opacity: .5;
+    font-weight: 400;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.stats{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.stat{
+  text-align: center;
+}
+.numbers{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}
+.info{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+@media screen and (max-width: 631px) {
+    .illusion-img-1 {
+      transform: translate(-59%, -74%);
+    }
+    .illusion-img-2 {
+      transform: translate(55%, 78%);
+    }
+}
+@media screen and (max-width: 400px) {
+    .card {
+      width: 85%;
+    }
+}
